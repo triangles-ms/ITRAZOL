@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+    --Playfair: "Playfair Display", serif;
+    --Quicksand: "Quicksand", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 0.1rem;
+    width: 100%;
+    background: #aaa;
+    z-index: -1;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.heading span {
+    font-size: 3rem;
+    color: #005e96;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #aaa;
+    border-radius: 0.5rem;
+}
+
+.navbar {
+    background: #fff;
+    padding: 2rem;
+}
+
+.navbar .container {
+    padding: 0.5rem 9%;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.design {
+    padding: 1rem 0;
+}
+
+.design .container {
+    padding: 0.5rem 8%;
+    margin: auto;
+}
+
+.design-content {
+    margin: 2rem 0;
+    background-color: transparent;
+}
+
+.design-item {
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.design-img {
+    position: relative;
+    height: 250px;
+}
+
+.design-img img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.design-item:hover img {
+    opacity: 0.8;
+}
+
+.design-img span:first-of-type {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background: #005e96;
+    color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.design-img span:last-of-type {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.design-img span:last-of-type a {
+    color: #fff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.design-img span:last-of-type a:hover {
+    color: #005e96;
+}
+
+.design-title {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.design-title a {
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.saja-logo {
+    width: 200px;
+    margin: auto;
+}
+
+.saja-logo img {
+    width: 200px;
+}
+
+.dermatomycosis {
+    padding: 1rem 9%;
+}
+
+.dermatomycosis .container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.dermatomycosis .container img {
+    width: 500px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.dermatomycosis .container .image-text {
+    padding-top: 2.3rem;
+}
+
+.dermatomycosis .container .image-text h2 {
+    font-size: 2.5rem;
+    font-family: var(--Playfair);
+    color: #005e96;
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.dermatomycosis .container .image-text h3 {
+    font-size: 1.8rem;
+    font-family: var(--Roboto);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.dermatomycosis .container .image-text p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 0.5px solid #777;
+}
+
+.dermatomycosis .overview {
+    width: 830px;
+    background: transparent;
+    margin: 20px auto;
+}
+
+.dermatomycosis .overview:hover {
+    opacity: 0.9;
+}
+
+.dermatomycosis span {
+    padding: 30px;
+    background: #005e96;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.dermatomycosis span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+.dermatomycosis .slide {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+.dermatomycosis .slide li {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.dermatomycosis #touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+.dermatomycosis #touch:checked+.slide {
+    height: 300px;
+}
+
+.back-btn {
+    padding: 0rem 16.5%;
+    margin-top: -10px;
+}
+
+.back {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #005e96;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.back a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .logo {
+        top: 30px;
+        left: 20px;
+    }
+    .dark-light:checked+label,
+    .dark-light:not(:checked)+label {
+        top: 20px;
+        right: 20px;
+    }
+    .back-btn {
+        padding: 0rem 0%;
+    }
+    .back a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .design-item {
+        margin-bottom: -25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .navbar-brand img {
+        width: 150px;
+    }
+    .title h2 {
+        font-size: 2rem;
+    }
+    .saja-logo {
+        width: 160px;
+    }
+    .saja-logo img {
+        width: 150px;
+    }
+    .design-img {
+        height: 190px;
+    }
+    .dermatomycosis {
+        padding: 0.5rem 10%;
+    }
+    .dermatomycosis .container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .dermatomycosis .container img {
+        width: 580px;
+        margin-left: 20px;
+    }
+    .dermatomycosis .container .image-text {
+        margin-left: 20px;
+    }
+    .dermatomycosis .container .image-text h2 {
+        font-size: 2.3rem;
+    }
+    .dermatomycosis .container .image-text h3 {
+        font-size: 1.5rem;
+    }
+    .dermatomycosis .container .image-text p {
+        font-size: 1.3rem;
+    }
+    .dermatomycosis .overview {
+        width: 590px;
+    }
+    .back-btn {
+        padding: 0rem 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .design-item {
+        margin-bottom: -25px;
+    }
+    .design-img {
+        height: 170px;
+    }
+    .navbar-brand img {
+        width: 120px;
+    }
+    .title h2 {
+        font-size: 1.7rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    .dermatomycosis {
+        padding: 0.5rem 5%;
+    }
+    .dermatomycosis .container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .dermatomycosis .container img {
+        width: 380px;
+    }
+    .dermatomycosis .container .image-text h2 {
+        font-size: 2.1rem;
+    }
+    .dermatomycosis .container .image-text h3 {
+        font-size: 1.4rem;
+    }
+    .dermatomycosis .container .image-text p {
+        font-size: 1.2rem;
+    }
+    .dermatomycosis .overview {
+        width: 400px;
+    }
+    .navbar-brand img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading span {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    .dermatomycosis {
+        padding: 0.5rem 2%;
+    }
+    .dermatomycosis .container {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .dermatomycosis .container img {
+        width: 300px;
+    }
+    .dermatomycosis .container .image-text {
+        margin-top: -25px;
+    }
+    .dermatomycosis .container .image-text h2 {
+        font-size: 1.6rem;
+    }
+    .dermatomycosis .container .image-text h3 {
+        font-size: 1.3rem;
+    }
+    .dermatomycosis .container .image-text p {
+        font-size: 1.1rem;
+    }
+    .dermatomycosis .overview {
+        width: 310px;
+    }
+    .back-btn {
+        padding: 0rem 4%;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-top: 3px;
+    }
+    .dermatomycosis span {
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+    .dermatomycosis .slide li {
+        font-size: 1.2rem;
+    }
+    .navbar-brand img {
+        width: 250px;
+    }
+}
